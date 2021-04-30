@@ -21,18 +21,18 @@ const resizestyle = {
   // justifyContent: "center",
   // border: "solid 5px ",
   background: "transparent",
-  width: "200px"
+  width: "200px",
 };
 
 const useGridStyles = makeStyles((theme) => ({
   root: {
-    flexGrow: 1
+    flexGrow: 1,
   },
   paper: {
     padding: theme.spacing(2),
     textAlign: "center",
-    color: theme.palette.text.secondary
-  }
+    color: theme.palette.text.secondary,
+  },
 }));
 
 export default function App() {
@@ -46,7 +46,7 @@ export default function App() {
   const [isMemeGenerated, setIsMemeGenerated] = React.useState(false);
   const [textelement, settextelement] = useState([
     "Copying others Meme",
-    "Creating your own meme"
+    "Creating your own meme",
   ]);
   const [imageElement, setImageElement] = React.useState([]);
   //addText starts here
@@ -127,7 +127,7 @@ export default function App() {
     <div
       style={{
         backgroundImage:
-          "url(https://lh4.googleusercontent.com/4L-yIdNVCrk5IQ8LMzlPWKNBRNj4RdQR_Q1N1BnxFCflslHNOoQR3siPGGBlZ2XmLdv7-vb0JdDw23rLjxuj=w1920-h975)"
+          "url(https://i.ibb.co/60yWjTy/imageedit-1-9188751214.png)",
       }}
       className="App"
     >
@@ -137,7 +137,7 @@ export default function App() {
             backgroundColor: "#48cfe4",
             padding: "20px ",
             marginTop: "0",
-            fontSize: "2em"
+            fontSize: "2em",
           }}
         >
           Meme Generator
@@ -154,7 +154,7 @@ export default function App() {
             border: "2px solid",
             borderRadius: "10px",
             backgroundColor: "white",
-            overflow: "hidden"
+            overflow: "hidden",
           }}
           item
           xs={12}
@@ -165,7 +165,7 @@ export default function App() {
             <div
               style={{
                 width: "100%",
-                maxWidth: "38vw"
+                maxWidth: "38vw",
                 // content: "url(" + activeImage + ")"
               }}
               className="content"
@@ -173,7 +173,7 @@ export default function App() {
               <img
                 style={{
                   // margin: "0 auto",
-                  maxWidth: "38vw"
+                  maxWidth: "38vw",
                 }}
                 src={activeImage}
                 alt="0"
@@ -209,7 +209,7 @@ export default function App() {
                         maxWidth: "38vw",
                         position: "absolute",
                         top: (index + 1) * 25 + 200,
-                        zIndex: index + 1000
+                        zIndex: index + 1000,
                       }}
                     >
                       <EditableText text={item} fSize="24" />
@@ -227,7 +227,7 @@ export default function App() {
                         top: (index + 1) * 15,
                         height: "auto",
                         background: "transparent",
-                        zIndex: index + 10
+                        zIndex: index + 10,
                       }}
                     >
                       <Resizable style={resizestyle} defaultSize={{}}>
@@ -252,7 +252,7 @@ export default function App() {
           style={{
             border: "2px solid",
             borderRadius: "10px",
-            backgroundColor: "white"
+            backgroundColor: "white",
           }}
           item
           xs={12}
@@ -326,7 +326,7 @@ export default function App() {
                           border: "0.001px solid ",
                           borderRadius: "5px",
                           width: "80%",
-                          height: "45px"
+                          height: "45px",
                         }}
                         value={text}
                         onChange={(e) => {
@@ -336,7 +336,7 @@ export default function App() {
                     ) : (
                       <span
                         style={{
-                          border: isMousedOver ? "1.25px dashed " : null
+                          border: isMousedOver ? "1.25px dashed " : null,
                         }}
                         onMouseOver={() => setMouseOver(true)}
                         onMouseOut={() => setMouseOver(false)}
