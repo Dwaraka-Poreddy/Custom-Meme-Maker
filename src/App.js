@@ -20,7 +20,8 @@ const resizestyle = {
   // alignItems: "center",
   // justifyContent: "center",
   // border: "solid 5px ",
-  background: "currentColor"
+  background: "transparent",
+  width: "200px"
 };
 
 const useGridStyles = makeStyles((theme) => ({
@@ -74,6 +75,7 @@ export default function App() {
     setImageElement((prevElements) => {
       return [...prevElements, e];
     });
+    console.log(imageElement, "hello");
   }
 
   // changing image
@@ -123,33 +125,43 @@ export default function App() {
 
   return (
     <div
-      // style={{
-      //   position: "absolute",
-      //   opacity:"0.5",
-      //   backgroundImage:
-      //     "url(http://www.relatably.com/m/img/all-memes-in-one-picture/internet-meme-poster-small.jpg)"
-      // }}
+      style={{
+        backgroundImage:
+          "url(https://lh4.googleusercontent.com/4L-yIdNVCrk5IQ8LMzlPWKNBRNj4RdQR_Q1N1BnxFCflslHNOoQR3siPGGBlZ2XmLdv7-vb0JdDw23rLjxuj=w1920-h975)"
+      }}
       className="App"
     >
       <div>
-        <h1>Meme Generator</h1>
+        <h1
+          style={{
+            backgroundColor: "#48cfe4",
+            padding: "20px ",
+            marginTop: "0",
+            fontSize: "2em"
+          }}
+        >
+          Meme Generator
+        </h1>
         <h2>Stop COPYING, Start CREATING!</h2>
       </div>
-      <Grid style={{ maxWidth: "80vw", margin: "auto" }} container spacing={2}>
+      <Grid
+        style={{ maxWidth: "80vw", margin: "auto", overflow: "hidden" }}
+        container
+        spacing={2}
+      >
         <Grid
-          style={{ border: "2px solid", borderRadius: "10px" }}
+          style={{
+            border: "2px solid",
+            borderRadius: "10px",
+            backgroundColor: "white",
+            overflow: "hidden"
+          }}
           item
           xs={12}
           sm={6}
         >
-          <Paper className={gridclasses.paper}>xs=12 sm=6</Paper>
-          <div
-            // style={{
-            //   // margin: "0 auto",
-            //   maxWidth: "38vw"ss
-            // }}
-            id="mnode"
-          >
+          <br /> <br />
+          <div id="mnode">
             <div
               style={{
                 width: "100%",
@@ -194,7 +206,10 @@ export default function App() {
                   <Draggable style={{ width: 200, zIndex: 9999 }}>
                     <p
                       style={{
-                        maxWidth: "38vw"
+                        maxWidth: "38vw",
+                        position: "absolute",
+                        top: (index + 1) * 25 + 200,
+                        zIndex: index + 1000
                       }}
                     >
                       <EditableText text={item} fSize="24" />
@@ -205,14 +220,25 @@ export default function App() {
               })}
               {imageElement.map((item, index) => {
                 return (
-                  <Draggable style={{ zIndex: 0 }}>
-                    <Resizable style={resizestyle} defaultSize={{}}>
-                      <img
-                        style={{ width: "inherit", height: "inherit" }}
-                        src={item}
-                        alt={index}
-                      />
-                    </Resizable>
+                  <Draggable>
+                    <span
+                      style={{
+                        position: "absolute",
+                        top: (index + 1) * 15,
+                        height: "auto",
+                        background: "transparent",
+                        zIndex: index + 10
+                      }}
+                    >
+                      <Resizable style={resizestyle} defaultSize={{}}>
+                        <img
+                          class="secondaryImage"
+                          style={{ width: "inherit", height: "auto" }}
+                          src={item}
+                          alt={index}
+                        />
+                      </Resizable>
+                    </span>
                   </Draggable>
                 );
                 // <h2>{item}</h2>;
@@ -223,17 +249,20 @@ export default function App() {
         </Grid>
 
         <Grid
-          style={{ border: "2px solid", borderRadius: "10px" }}
+          style={{
+            border: "2px solid",
+            borderRadius: "10px",
+            backgroundColor: "white"
+          }}
           item
           xs={12}
           sm={6}
         >
-          <Paper className={gridclasses.paper}>xs=12 sm=6</Paper>
-
+          <br /> <br />
           <React.Fragment>
             <div className="form__btns">
               <Grid style={{ margin: "auto" }} item xs={12} sm={6}>
-                <Paper className={gridclasses.paper}>xs=12 sm=6</Paper>
+                <br /> <br />
                 <button
                   className="btn btn-primary"
                   type="button"
@@ -244,7 +273,7 @@ export default function App() {
               </Grid>
 
               <Grid style={{ margin: "auto" }} item xs={12} sm={6}>
-                <Paper className={gridclasses.paper}>xs=12 sm=6</Paper>
+                <br /> <br />
                 <label className="btn btn-primary" htmlFor="fileInput">
                   Add &nbsp; Local &nbsp; Images
                   <input
@@ -259,7 +288,7 @@ export default function App() {
               </Grid>
 
               <Grid style={{ margin: "auto" }} item xs={12} sm={6}>
-                <Paper className={gridclasses.paper}>xs=12 sm=6</Paper>
+                <br /> <br />
                 {inputVisible ? (
                   <button
                     className="btn btn-success form__btns form "
@@ -280,7 +309,8 @@ export default function App() {
               </Grid>
 
               <Grid style={{ margin: "auto" }} item xs={6} sm={6}>
-                <Paper className={gridclasses.paper}>xs=6 sm=4</Paper>
+                <br />
+                <br />
 
                 <div>
                   <div ref={inputRef}>
@@ -322,11 +352,11 @@ export default function App() {
               </Grid>
 
               <Grid style={{ margin: "auto" }} item xs={12} sm={6}>
-                <Paper className={gridclasses.paper}>xs=12 sm=6</Paper>
-                <label className="btn btn-info" htmlFor="fileInput">
+                <br /> <br />
+                <label className="btn btn-info" htmlFor="fileInput1">
                   Add Secondary Image
                   <input
-                    id="fileInput"
+                    id="fileInput1"
                     name="fileInput"
                     type="file"
                     accept=".jpg, .jpeg, .png"
@@ -337,7 +367,7 @@ export default function App() {
               </Grid>
 
               <Grid style={{ margin: "auto" }} item xs={12} sm={6}>
-                <Paper className={gridclasses.paper}>xs=12 sm=6</Paper>
+                <br /> <br />
                 {isMemeGenerated ? (
                   <button
                     className="btn btn-success form__btns form "
