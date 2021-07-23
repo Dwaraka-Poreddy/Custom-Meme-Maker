@@ -33,6 +33,7 @@ Create, download and share. Hit "Generate Meme" and then choose how to share and
 - Firebase 
 - React JS
 - Material UI
+- API
 
 ---
 
@@ -92,6 +93,7 @@ Custom-Meme-Maker
 
 - [React JS](https://reactjs.org/)
 - [Firebase](https://firebase.google.com/)
+- [Imgflip API](https://imgflip.com/)
 
 ---
 
