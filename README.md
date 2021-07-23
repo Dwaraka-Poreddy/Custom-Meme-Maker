@@ -68,64 +68,11 @@ Custom-Meme-Maker
 │  └─ hosting.YnVpbGQ.cache
 ├─ .firebaserc
 ├─ .git
-│  ├─ config
-│  ├─ description
-│  ├─ HEAD
-│  ├─ hooks
-│  │  ├─ applypatch-msg.sample
-│  │  ├─ commit-msg.sample
-│  │  ├─ fsmonitor-watchman.sample
-│  │  ├─ post-update.sample
-│  │  ├─ pre-applypatch.sample
-│  │  ├─ pre-commit.sample
-│  │  ├─ pre-merge-commit.sample
-│  │  ├─ pre-push.sample
-│  │  ├─ pre-rebase.sample
-│  │  ├─ pre-receive.sample
-│  │  ├─ prepare-commit-msg.sample
-│  │  └─ update.sample
-│  ├─ index
-│  ├─ info
-│  │  └─ exclude
-│  ├─ logs
-│  │  ├─ HEAD
-│  │  └─ refs
-│  │     ├─ heads
-│  │     │  └─ master
-│  │     └─ remotes
-│  │        └─ origin
-│  │           └─ HEAD
-│  ├─ objects
-│  │  ├─ info
-│  │  └─ pack
-│  │     ├─ pack-6136fc2b930e791215053bec0ba2b39ff51058e0.idx
-│  │     └─ pack-6136fc2b930e791215053bec0ba2b39ff51058e0.pack
-│  ├─ packed-refs
-│  └─ refs
-│     ├─ heads
-│     │  └─ master
-│     ├─ remotes
-│     │  └─ origin
-│     │     └─ HEAD
-│     └─ tags
 ├─ .gitignore
 ├─ build
-│  ├─ asset-manifest.json
-│  ├─ index.html
-│  ├─ precache-manifest.2ee9a1b45987073949581c28e930a4c7.js
-│  ├─ service-worker.js
 │  └─ static
 │     ├─ css
-│     │  ├─ main.ce3107d4.chunk.css
-│     │  └─ main.ce3107d4.chunk.css.map
 │     └─ js
-│        ├─ 2.8681b9e6.chunk.js
-│        ├─ 2.8681b9e6.chunk.js.LICENSE.txt
-│        ├─ 2.8681b9e6.chunk.js.map
-│        ├─ main.5eaa460c.chunk.js
-│        ├─ main.5eaa460c.chunk.js.map
-│        ├─ runtime-main.070059b3.js
-│        └─ runtime-main.070059b3.js.map
 ├─ firebase.json
 ├─ package-lock.json
 ├─ package.json
