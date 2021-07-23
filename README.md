@@ -41,7 +41,7 @@ Create, download and share. Hit "Generate Meme" and then choose how to share and
 
 <br>
 
-### Change Text and Images
+### Using trending meme templates
 <br>
 <p align="center">
   <img  src="g1.gif" >  
@@ -49,7 +49,7 @@ Create, download and share. Hit "Generate Meme" and then choose how to share and
 
 <br>
 
-### Add or Delete Pre-built Components
+### Using your own Template
 
 <br/>
 <p align="center">
