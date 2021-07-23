@@ -2,7 +2,7 @@
 <br>
 
 <p align="center">
-  <img  src="demo1.png" >  
+  <img  src="demo.png" >  
 </p>
 
 It's a free online meme maker that lets you add custom resizable text, images, and much more to templates. Yes! The Custom Meme Maker is a flexible tool for many purposes. By uploading custom images and using all the customizations, you can design many creative works including memes, posters, and other advertisements.
