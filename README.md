@@ -1,9 +1,4 @@
-# Custom-Meme-Maker   https://custom-meme-maker.web.app/
-It's a free online meme maker that lets you add custom resizable text, images, and much more to templates.
-Choose a template. You can use one of the popular templates, search through more than 1 million user-uploaded templates using the search input, or hit "Add local template" to upload your own template from your device.
-Add customizations. Add text, images, stickers, drawings, and spacing using the buttons beside your meme canvas.
-Create, download and share. Hit "Generate Meme" and then choose how to share and save your meme. You can share to social apps or through your phone, or share a link, or download to your device.
-
+# Custom-Meme-Maker 
 <br>
 
 <p align="center">
@@ -29,6 +24,9 @@ It's a free online meme maker that lets you add custom resizable text, images, a
 ## Description
 
 Memes made easy. Our meme maker is all you need to make the funniest video memes online. Use your own videos or stock, add meme text and share.
+Choose a template. You can use one of the popular templates, search through more than 1 million user-uploaded templates using the search input, or hit "Add local template" to upload your own template from your device.
+Add customizations. Add text, images, stickers, drawings, and spacing using the buttons beside your meme canvas.
+Create, download and share. Hit "Generate Meme" and then choose how to share and save your meme. You can share to social apps or through your phone, or share a link, or download to your device.
 
 ### Technologies
 
@@ -65,73 +63,82 @@ Memes made easy. Our meme maker is all you need to make the funniest video memes
 <br />
 
 ```
-Website-Builder-React
+Custom-Meme-Maker
+├─ .firebase
+│  └─ hosting.YnVpbGQ.cache
+├─ .firebaserc
+├─ .git
+│  ├─ config
+│  ├─ description
+│  ├─ HEAD
+│  ├─ hooks
+│  │  ├─ applypatch-msg.sample
+│  │  ├─ commit-msg.sample
+│  │  ├─ fsmonitor-watchman.sample
+│  │  ├─ post-update.sample
+│  │  ├─ pre-applypatch.sample
+│  │  ├─ pre-commit.sample
+│  │  ├─ pre-merge-commit.sample
+│  │  ├─ pre-push.sample
+│  │  ├─ pre-rebase.sample
+│  │  ├─ pre-receive.sample
+│  │  ├─ prepare-commit-msg.sample
+│  │  └─ update.sample
+│  ├─ index
+│  ├─ info
+│  │  └─ exclude
+│  ├─ logs
+│  │  ├─ HEAD
+│  │  └─ refs
+│  │     ├─ heads
+│  │     │  └─ master
+│  │     └─ remotes
+│  │        └─ origin
+│  │           └─ HEAD
+│  ├─ objects
+│  │  ├─ info
+│  │  └─ pack
+│  │     ├─ pack-6136fc2b930e791215053bec0ba2b39ff51058e0.idx
+│  │     └─ pack-6136fc2b930e791215053bec0ba2b39ff51058e0.pack
+│  ├─ packed-refs
+│  └─ refs
+│     ├─ heads
+│     │  └─ master
+│     ├─ remotes
+│     │  └─ origin
+│     │     └─ HEAD
+│     └─ tags
+├─ .gitignore
+├─ build
+│  ├─ asset-manifest.json
+│  ├─ index.html
+│  ├─ precache-manifest.2ee9a1b45987073949581c28e930a4c7.js
+│  ├─ service-worker.js
+│  └─ static
+│     ├─ css
+│     │  ├─ main.ce3107d4.chunk.css
+│     │  └─ main.ce3107d4.chunk.css.map
+│     └─ js
+│        ├─ 2.8681b9e6.chunk.js
+│        ├─ 2.8681b9e6.chunk.js.LICENSE.txt
+│        ├─ 2.8681b9e6.chunk.js.map
+│        ├─ main.5eaa460c.chunk.js
+│        ├─ main.5eaa460c.chunk.js.map
+│        ├─ runtime-main.070059b3.js
+│        └─ runtime-main.070059b3.js.map
 ├─ firebase.json
 ├─ package-lock.json
 ├─ package.json
 ├─ public
-│  ├─ favicon.ico
-│  ├─ index.html
-│  ├─ manifest.json
-│  └─ robots.txt
+│  └─ index.html
 ├─ README.md
 └─ src
-   ├─ App.css
    ├─ App.js
-   ├─ App.test.js
-   ├─ components
-   │  ├─ AddElement.js
-   │  ├─ DisplayElements.js
-   │  ├─ EditableText.js
-   │  ├─ elements
-   │  │  ├─ Button.js
-   │  │  ├─ ButtonGroup.js
-   │  │  ├─ Checkbox.js
-   │  │  ├─ FormHint.js
-   │  │  ├─ FormLabel.js
-   │  │  ├─ Image.js
-   │  │  ├─ Input.js
-   │  │  └─ Switch.js
-   │  ├─ ImageEdit
-   │  │  ├─ EditImage.js
-   │  │  └─ firebase.js
-   │  ├─ layout
-   │  │  ├─ Footer.js
-   │  │  ├─ Header.js
-   │  │  └─ partials
-   │  │     ├─ FooterNav.js
-   │  │     ├─ FooterSocial.js
-   │  │     └─ Logo.js
-   │  ├─ NewElements.js
-   │  └─ sections
-   │     ├─ Accordion.js
-   │     ├─ Carousel.js
-   │     ├─ ChatBox.js
-   │     ├─ Cta.js
-   │     ├─ ExpandableTable.js
-   │     ├─ PlaceOrder
-   │     ├─ PricingTemplate.js
-   │     ├─ ReviewCard.js
-   │     ├─ SigninElement.js
-   │     ├─ Testimonial.js
-   │     ├─ ThreeImages.js
-   │     ├─ Timeline.js
-   │     ├─ TopNav.js
-   │     └─ VerticalStepper.js
-   ├─ EditContext.js
+   ├─ EditableText.js
    ├─ index.js
-   ├─ layouts
-   │  └─ LayoutDefault.js
-   ├─ serviceWorker.js
-   ├─ utils
-   │  ├─ AppRoute.js
-   │  ├─ ScrollReveal.js
-   │  └─ SectionProps.js
-   └─ views
-      └─ Home.js
+   └─ styles.css
 
 ```
-
 ---
 
 ## References
@@ -146,7 +153,7 @@ Website-Builder-React
 - LinkedIn - [Dwaraka Poreddy](https://www.linkedin.com/in/dwarakanath-reddy-poreddy-3bbb231b1/)
 - Github - [Dwaraka Poreddy](https://github.com/Dwaraka-Poreddy)
 
-#### [Back To The Top](#WebMaker)
+#### [Back To The Top](#Custom-Meme-Maker )
 
 
 
